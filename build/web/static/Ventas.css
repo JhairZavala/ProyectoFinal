@@ -1,0 +1,172 @@
+.DIV_header
+{
+	width:100%;
+	float:none;
+}
+.DIV_Opciones
+{
+	position:fixed;
+	float:right;
+	width:100%;
+	z-index:5px;
+	background-color:#000;
+	box-shadow:10px 10px 10px #006;
+	display:inline;
+}
+.DIV_Opciones:hover
+{
+	cursor:pointer;
+}
+#menu
+{
+	width:100%;
+	background-size:100%;
+	overflow:hidden;;
+}
+#menu a 
+{
+	text-decoration:none;
+}
+#menu ul
+{
+	padding:0;
+	list-style:none;
+}
+#hmenu > li
+{
+	display:inline-block;
+}
+#hmenu > li > a
+{
+	display:block;
+	padding:30px 40px;
+	width:100%;
+}
+li ul
+{
+	position:absolute;
+	display:none;
+}
+.submenu a
+{
+	display:block;
+	padding:10px 25px;
+	width:100px;
+        text-align: center;
+        background-color: #ff2e2e;
+}
+
+li:hover ul
+{
+	display:block;
+}
+
+#hmenu
+{
+	width:100%;
+	margin:0 auto;
+	background-color: #ff2e2e;
+	opacity:.9;
+}
+#hmenu a
+{
+	color:#000000;
+	text-decoration:blink;
+	font-weight:bold;
+        font-family: "Cambria";
+}
+#hmenu a:hover
+{
+	color:#fff;
+        font-family: "Cambria";
+}
+#hmenu li:hover
+{
+	background:#ff2e2e;
+	
+}
+#hmenu img
+{
+	width:15%;
+}
+body
+{
+	margin:0;
+	font-size:18px;
+	background-attachment:fixed;
+	background-position:center;	
+	background-color:#F0FFF8;
+}
+.H1_titulo
+{
+	width:30%;
+	margin:auto;
+	color:#fff;
+	text-align:center;
+	border-radius:40px;
+        font-family: "Cambria";
+        background-color: #000000;
+}
+.DIV_main
+{
+	float:none;
+	width:100%;
+	padding-top:200px;
+}
+fieldset
+{
+margin-left:40%;
+margin-right:40%;
+}
+.DIV_form form fieldset label, input, select
+{
+	display:block;
+}
+#Formulario fieldset
+{
+	background-color:#ff2e2e;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:25px;
+	border-radius:15px;
+	border:0px;
+	opacity:.9;
+        font-family:"Cambria"; 
+}
+.DIV_form input[type="text"], select, option,input[type="number"]
+{
+	padding:2px;
+	border-radius:10px;
+	background-color:#FFF;
+	color:#000;
+	border:0px;
+}
+.DIV_footer label
+{
+	color:#FFF;
+}
+.contacto
+{
+	float:left;
+	text-align:center;
+	width:100%;
+	color:#FFF;
+	text-decoration:none;
+	background-color: #ff2e2e;
+	border:none;
+	padding:5px;
+        margin-top: 2cm;
+}
+.contacto label
+{
+	padding-rigth:20px;
+}
+input.compra{
+        text-align:center;
+	color:#000;
+	border: 1px solid transparent;
+	border-radius:4px;
+        padding: 6px 12px;
+        cursor: pointer;
+}
