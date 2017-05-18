@@ -7,11 +7,8 @@ package models;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -51,26 +48,5 @@ public class DAO {
            cerrarConexion();
        }catch(Exception ex){
        }
-    }
-    
-public ArrayList buscar(POJO pojo) {
-        ArrayList<POJO> comentarios = new ArrayList();
-        try{
-            abrirConexion();
-            String sqlBuscar = "select * from LOGIN where NOMBRE = '" + pojo.getNombre() + "' and CONTRASENA like '%" + pojo.getContrasena() + "%'";            
-            Statement statement = conexion.createStatement();
-            ResultSet result = statement.executeQuery(sqlBuscar);
-            while(result.next()){
-                String nombre = result.getString("Nombre");
-                String contrasena = result.getString("Contrasena");
-                POJO coment = new POJO();
-                coment.setNombre(nombre);
-                coment.setContrasena(contrasena);
-                comentarios.add(coment);
-            }
-            cerrarConexion();
-        }catch(Exception ex){
-        }
-        return comentarios;
     }
 }

@@ -32,18 +32,14 @@ public class Login extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        HttpSession session = request.getSession();
-        String txtUser = request.getParameter("txt-user");
+        String txtUser = request.getParameter("txt-nombre");
         String txtPassword = request.getParameter("txt-password");
 
-        POJO pojo = new POJO();
-        DAO cdao = new DAO();
-        
-        cdao.buscar(pojo);
-        session.setAttribute("nombre", pojo.getNombre());
-        session.setAttribute("contrasena", pojo.getContrasena());
-        
-        response.sendRedirect("porfile.jsp");
+        if(txtUser.isEmpty() || txtPassword.isEmpty()){
+            response.sendRedirect("login.jsp");
+        }else{
+            response.sendRedirect("porfile.jsp");
+        }   
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
